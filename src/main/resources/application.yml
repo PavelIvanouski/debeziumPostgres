@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/transfer
+    username: postgres
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+
+transfer:
+  datasource:
+    database: transfer
+    host : localhost
+    port: 5432
+    username: postgres
+    password: postgres
+
+
